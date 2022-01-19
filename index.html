@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" href="css/data-processing.css" />
  </head>
  <body>
      <header>
@@ -20,18 +21,20 @@
      </header>
      
    <main class="wrapper">
+       <div id="output">Output goes here
+       </div>
     <form method="get" action="" class="main-form">
         <div>
             <label for="FirstName">First Name</label>: <br />
-            <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required="required" autofocus /> 
+            <input type="text" name="First_Name" id="FirstName" placeholder="First Name" required="required" autofocus /> 
         </div>
         <div>
             <label for="LastName">Last Name</label>: <br />
-            <input type="text" name="LastName" id="Last Name" placeholder="Last Name" required="required" /> 
+            <input type="text" name="Last_Name" id="LastName" placeholder="Last Name" required="required" /> 
         </div>
         <div>
             <label for="Email">Email</label>: <br />
-            <input type="email" name="Email" id="Last Name" placeholder="Email" required="required" /> 
+            <input type="email" name="Email" id="Email" placeholder="Email" required="required" /> 
         </div>
         <div>
             <label for="Address">Address</label>: <br />
@@ -49,7 +52,6 @@
                  <option value="CO">Colorado</option>
                  <option value="CT">Connecticut</option>
                  <option value="DE">Delaware</option>
-                 <option value="DC">District of Columbia</option>
                  <option value="FL">Florida</option>
                  <option value="GA">Georgia</option>
                  <option value="HI">Hawaii</option>
@@ -80,7 +82,6 @@
                  <option value="OK">Oklahoma</option>
                  <option value="OR">Oregon</option>
                  <option value="PA">Pennsylvania</option>
-                 <option value="PR">Puerto Rico</option>
                  <option value="RI">Rhode Island</option>
                  <option value="SC">South Carolina</option>
                  <option value="SD">South Dakota</option>
@@ -98,17 +99,17 @@
         <div>
             <fieldset>
                 <legend>Would you like to join our mailing list?</legend>
-                <label><input type="radio" name="JoinMailingList" value="Yes" required="required"/> Yes</label><br />
-                <label><input type="radio" name="JoinMailingList" value="No" /> No</label>
+                <label><input type="radio" name="Join_Mailing_List" value="Yes" required="required"/> Yes</label><br />
+                <label><input type="radio" name="Join_Mailing_List" value="No" /> No</label>
             </fieldset>
         </div>
         <div>
             <fieldset>
                 <legend>Would you like to join our mailing list?</legend>
-                <label><input type="checkbox" name="InterestedIn" value="Website" />Website</label><br />
-                <label><input type="checkbox" name="InterestedIn" value="OnlineCalendar" />Online Calendar</label><br />
-                <label><input type="checkbox" name="InterestedIn" value="ContactForm" />Contact Form</label><br />
-                <label><input type="checkbox" name="InterestedIn" value="Lollipop" />Complimentary Lollipop </label>
+                <label><input type="checkbox" name="Interested_In" value="Website" />Website</label><br />
+                <label><input type="checkbox" name="Interested_In" value="OnlineCalendar" />Online Calendar</label><br />
+                <label><input type="checkbox" name="Interested_In" value="ContactForm" />Contact Form</label><br />
+                <label><input type="checkbox" name="Interested_In" value="Lollipop" />Complimentary Lollipop </label>
             </fieldset>
         </div>
         <div>
@@ -129,6 +130,7 @@
           </footer>
    
   </main>
+  <script src="js/data-processing.js"></script>
   <script src="js/main.js"></script>
  </body>
 </html>
