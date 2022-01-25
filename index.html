@@ -15,7 +15,7 @@
      <h1>Form Template</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Tab</a>
+            <a href="#" target="_blank"></a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
@@ -23,103 +23,128 @@
    <main class="wrapper">
        <div id="output">
        
-    <form method="get" action="" class="main-form">
-        <div>
-            <label for="FirstName">First Name</label>: <br />
-            <input type="text" name="First_Name" id="FirstName" placeholder="First Name" required="required" autofocus /> 
-        </div>
-        <div>
-            <label for="LastName">Last Name</label>: <br />
-            <input type="text" name="Last_Name" id="LastName" placeholder="Last Name" required="required" /> 
-        </div>
-        <div>
-            <label for="Email">Email</label>: <br />
-            <input type="email" name="Email" id="Email" placeholder="Email" required="required" /> 
-        </div>
-        <div>
-            <label for="Address">Address</label>: <br />
-            <input type="text" name="Address" id="Address" placeholder="Address" required="required" /> 
-        </div>
-        <div>
-            <label for="State">State</label>: <br />
-            <select name="State" id="State">
-                 <option value="">Please select state</option>
-                 <option value="AL">Alabama</option>
-                 <option value="AK">Alaska</option>
-                 <option value="AZ">Arizona</option>
-                 <option value="AR">Arkansas</option>  
-                 <option value="CA">California</option> 
-                 <option value="CO">Colorado</option>
-                 <option value="CT">Connecticut</option>
-                 <option value="DE">Delaware</option>
-                 <option value="FL">Florida</option>
-                 <option value="GA">Georgia</option>
-                 <option value="HI">Hawaii</option>
-                 <option value="ID">Idaho</option>
-                 <option value="IL">Illinois</option>
-                 <option value="IN">Indiana</option>
-                 <option value="IA">Iowa</option>
-                 <option value="KS">Kansas</option>
-                 <option value="KY">Kentucky</option>
-                 <option value="LA">Louisiana</option>
-                 <option value="ME">Maine</option>
-                 <option value="MD">Maryland</option>
-                 <option value="MA">Massachusetts</option>
-                 <option value="MI">Michigan</option>
-                 <option value="MN">Minnesota</option>
-                 <option value="MS">Mississippi</option>
-                 <option value="MO">Missouri</option>
-                 <option value="MT">Montana</option>
-                 <option value="NE">Nebraska</option>
-                 <option value="NV">Nevada</option>
-                 <option value="NH">New Hampshire</option>
-                 <option value="NJ">New Jersey</option>
-                 <option value="NM">New Mexico</option>
-                 <option value="NY">New York</option>
-                 <option value="NC">North Carolina</option>
-                 <option value="ND">North Dakota</option>
-                 <option value="OH">Ohio</option>
-                 <option value="OK">Oklahoma</option>
-                 <option value="OR">Oregon</option>
-                 <option value="PA">Pennsylvania</option>
-                 <option value="RI">Rhode Island</option>
-                 <option value="SC">South Carolina</option>
-                 <option value="SD">South Dakota</option>
-                 <option value="TN">Tennessee</option>
-                 <option value="TX">Texas</option>
-                 <option value="UT">Utah</option>
-                 <option value="VT">Vermont</option>
-                 <option value="VA">Virginia</option>
-                 <option value="WA">Washington</option>
-                 <option value="WV">West Virginia</option>
-                 <option value="WI">Wisconsin</option>
-                 <option value="WY">Wyoming</option>
-            </select>
-        </div>
-        <div>
-            <fieldset>
-                <legend>Would you like to join our mailing list?</legend>
-                <label><input type="radio" name="Join_Mailing_List" value="Yes" required="required"/> Yes</label><br />
-                <label><input type="radio" name="Join_Mailing_List" value="No" /> No</label>
-            </fieldset>
-        </div>
-        <div>
-            <fieldset>
-                <legend>Would you like to join our mailing list?</legend>
-                <label><input type="checkbox" name="Interested_In" value="Website" />Website</label><br />
-                <label><input type="checkbox" name="Interested_In" value="OnlineCalendar" />Online Calendar</label><br />
-                <label><input type="checkbox" name="Interested_In" value="ContactForm" />Contact Form</label><br />
-                <label><input type="checkbox" name="Interested_In" value="Lollipop" />Complimentary Lollipop </label>
-            </fieldset>
-        </div>
-        <div>
-            <label for="Comments">Comments:</label><br/>
-            <textarea name="Comments"></textarea>
-        </div>
-        <div>
-             <input type="submit" value="Submit It!"/>
-        </div>
-    </form>
+        <form method="get" action="" class="main-form">
+            <h3>Widgets</h3>
+            <div id="widgets">
+                    <div>
+                        <b>Widget</b><br />
+                        <p>Our Widgets are spring loaded and need no batteries!</p>
+                        <p>At $3.99 they're a bargain!</p>
+                        <p><label><input type="checkbox" name="Cart" value="Widget" />Add to Cart</label></p>
+                        <div class="pic"><img src="images/widget.png" /></div>
+                    </div>
+                    <div>
+                        <b>Sprocket</b><br />
+                        <p>Our Sprockets are well made and hold up to extreme pressure!</p>
+                        <p>They only cost $5.99!</p>
+                        <p><label><input type="checkbox" name="Cart" value="Sprocket" />Add to Cart</label></p>
+                        <div class="pic"><img src="images/sprocket.png" /></div>
+                    </div>
+                    <div>
+                        <b>Thingy</b><br />
+                        <p>Our Thingys have many uses, and people love them!</p>
+                        <p>Such a deal at $1.99!</p>
+                        <p><label><input type="checkbox" name="Cart" value="Thingy" />Add to Cart</label></p>
+                        <div class="pic"><img src="images/thingy.png" /></div>
+                    </div>
+                </div>
+            <h3>Shipping Information</h3>
+            <div>
+                <label for="FirstName">First Name</label>: <br />
+                <input type="text" name="First_Name" id="FirstName" placeholder="First Name" required="required" autofocus /> 
+            </div>
+            <div>
+                <label for="LastName">Last Name</label>: <br />
+                <input type="text" name="Last_Name" id="LastName" placeholder="Last Name" required="required" /> 
+            </div>
+            <div>
+                <label for="Email">Email</label>: <br />
+                <input type="email" name="Email" id="Email" placeholder="Email" required="required" /> 
+            </div>
+            <div>
+                <label for="Address">Address</label>: <br />
+                <input type="text" name="Address" id="Address" placeholder="Address" required="required" /> 
+            </div>
+            <div>
+                <label for="State">State</label>: <br />
+                <select name="State" id="State">
+                    <option value="">Please select state</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>  
+                    <option value="CA">California</option> 
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Would you like to join our mailing list?</legend>
+                    <label><input type="radio" name="Join_Mailing_List" value="Yes" required="required"/> Yes</label><br />
+                    <label><input type="radio" name="Join_Mailing_List" value="No" /> No</label>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Would you like to join our mailing list?</legend>
+                    <label><input type="checkbox" name="Interested_In" value="Website" />Website</label><br />
+                    <label><input type="checkbox" name="Interested_In" value="OnlineCalendar" />Online Calendar</label><br />
+                    <label><input type="checkbox" name="Interested_In" value="ContactForm" />Contact Form</label><br />
+                    <label><input type="checkbox" name="Interested_In" value="Lollipop" />Complimentary Lollipop </label>
+                </fieldset>
+            </div>
+            <div>
+                <label for="Comments">Comments:</label><br/>
+                <textarea name="Comments"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit It!"/>
+            </div>
+        </form>
     </div>
         <footer>
             <p><small>&copy; 2022-<span id="copyright"></span> by
