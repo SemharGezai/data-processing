@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Form Template</title>
+     <title>Data-Processing</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
@@ -12,7 +12,7 @@
  </head>
  <body>
      <header>
-     <h1>Form Template</h1>
+     <h1>Data-Processing</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
             <a href="#" target="_blank"></a>
@@ -64,6 +64,10 @@
             <div>
                 <label for="Address">Address</label>: <br />
                 <input type="text" name="Address" id="Address" placeholder="Address" required="required" /> 
+            </div>
+            <div>
+                <label for="City">City</label>: <br />
+                <input type="text" name="City" id="City" placeholder="City" required="required" /> 
             </div>
             <div>
                 <label for="State">State</label>: <br />
@@ -122,6 +126,10 @@
                 </select>
             </div>
             <div>
+                <label for="PostalCode">Postal Code</label>: <br />
+                <input type="text" name="PostalCode" id="PostalCode" placeholder="PostalCode" required="required" /> 
+            </div>
+            <div>
                 <fieldset>
                     <legend>Would you like to join our mailing list?</legend>
                     <label><input type="radio" name="Join_Mailing_List" value="Yes" required="required"/> Yes</label><br />
@@ -138,8 +146,8 @@
                 </fieldset>
             </div>
             <div>
-                <label for="Comments">Comments:</label><br/>
-                <textarea name="Comments"></textarea>
+                <label for="Notes">Notes:</label><br/>
+                <textarea name="Notes"></textarea>
             </div>
             <div>
                 <input type="submit" value="Submit It!"/>
@@ -147,6 +155,9 @@
         </form>
     </div>
         <footer>
+            <h5><i>This page demonstrates data processing of query string data using client side JavaScript.
+               <br> Upon submission, the cart items are totaled and title case is applied to the Shipping Info.
+               </i> </h5>
             <p><small>&copy; 2022-<span id="copyright"></span> by
                 Semhar Gezai, All Rights Reserved ~
                 <a id="html-checker" href="#">Check HTML</a> ~
