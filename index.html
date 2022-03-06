@@ -127,7 +127,7 @@
             </div>
             <div>
                 <label for="PostalCode">Postal Code</label>: <br />
-                <input type="text" name="PostalCode" id="PostalCode" placeholder="PostalCode" required="required" /> 
+                <input type="text" name="Postal_Code" id="PostalCode" placeholder="PostalCode" required="required" /> 
             </div>
             <div>
                 <label for="Notes">Notes:</label><br/>
@@ -154,3 +154,34 @@
   <script src="js/main.js"></script>
  </body>
 </html>
+<script>
+    // declare variables and load default values
+               let myDate = new Date();
+
+       //create dynamic copyright in footer//
+       let myYear = myDate.getFullYear();
+       document.getElementById("copyright").innerHTML = myYear;
+
+       //allows us to access hour of days for if block//
+       let myHour = myDate.getHours();
+
+
+       console.log (myHour)
+
+
+   
+       if(myHour >= 5 && myHour < 12){
+           
+           
+       }else if(myHour >= 12 && myHour < 18){
+               
+
+       }else if(myHour >= 18 && myHour < 23){
+           
+   
+       }
+
+       
+
+
+</script>
